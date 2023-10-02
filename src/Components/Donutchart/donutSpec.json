@@ -1,0 +1,10 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart",
+  "mark": { "type": "arc", "tooltip":true, "innerRadius": 50 },
+  "data": { "name": "values" },
+  "encoding": {
+    "theta": { "field": "value", "type": "quantitative" },
+    "color": { "field": "category", "type": "nominal" }
+  }
+}
